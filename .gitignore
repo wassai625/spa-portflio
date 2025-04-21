@@ -17,9 +17,13 @@
 /react/.env.development.local
 /react/.env.test.local
 /react/.env.production.local
+/.env.local
+/.env.devlopment
+/.env.production
 
 /react/npm-debug.log*
 /react/yarn-debug.log*
 /react/yarn-error.log*
 
 /.idea
+/backend/venv
