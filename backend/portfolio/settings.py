@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-#uw-c#mr*1427ijdmu+6(km$zmdz7+9=++w97uwd5x3vwmdq=-"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
@@ -99,10 +99,10 @@ WSGI_APPLICATION = "portfolio.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv("POSTGRES_DB"),
-        'USER': os.getenv("POSTGRES_USER"),
-        'PASSWORD': os.getenv("POSTGRES_PASSWORD"),
-        'HOST': 'bandsns_db',
+        'NAME': 'portfolio',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }
